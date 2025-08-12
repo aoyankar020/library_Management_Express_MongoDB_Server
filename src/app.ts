@@ -6,10 +6,7 @@ export const app: Application = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://library-management-redux-byaoyan.vercel.app",
-    ],
+    origin: "https://libraryclient-sigma.vercel.app",
   })
 );
 app.use(routes);

@@ -10,10 +10,7 @@ const cors_1 = __importDefault(require("cors"));
 exports.app = (0, express_1.default)();
 exports.app.use(express_1.default.json());
 exports.app.use((0, cors_1.default)({
-    origin: [
-        "http://localhost:5173",
-        "https://library-management-redux-byaoyan.vercel.app",
-    ],
+    origin: "https://libraryclient-sigma.vercel.app",
 }));
 exports.app.use(routes_merge_1.routes);
 exports.app.get("/", (req, res) => {
